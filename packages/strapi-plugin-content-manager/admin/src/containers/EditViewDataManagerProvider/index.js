@@ -450,6 +450,7 @@ const EditViewDataManagerProvider = ({
 
       try {
         // Time to actually send the data
+        console.log('!!CUSTOM RUN ENDPOINT!! ', getRequestUrl(endPoint));
         const res = await request(
           getRequestUrl(endPoint),
           {
@@ -839,21 +840,21 @@ const EditViewDataManagerProvider = ({
         {isLoading ? (
           <LoadingIndicatorPage />
         ) : (
-          <>
-            <Prompt
-              when={!isEqual(modifiedData, initialData)}
-              message={formatMessage({ id: 'global.prompt.unsaved' })}
-            />
-            <form onSubmit={handleSubmit}>{children}</form>
-          </>
-        )}
+            <>
+              <Prompt
+                when={!isEqual(modifiedData, initialData)}
+                message={formatMessage({ id: 'global.prompt.unsaved' })}
+              />
+              <form onSubmit={handleSubmit}>{children}</form>
+            </>
+          )}
       </>
     </EditViewDataManagerContext.Provider>
   );
 };
 
 EditViewDataManagerProvider.defaultProps = {
-  redirectToPreviousPage: () => {},
+  redirectToPreviousPage: () => { },
 };
 
 EditViewDataManagerProvider.propTypes = {

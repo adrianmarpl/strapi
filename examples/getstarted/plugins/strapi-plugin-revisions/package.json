@@ -1,0 +1,55 @@
+{
+  "_from": "strapi-plugin-revisions@^1.0.0-alpha.1",
+  "_id": "strapi-plugin-revisions@1.0.0-alpha.1",
+  "_inBundle": false,
+  "_integrity": "sha512-RFm+zSxrjckRyVkeyJnpHqSALnXXEfnNWgmP0LluR3irucrHi53KloyYuBCb0m57hTdCLGRuo7gZG0CRC3x8Vw==",
+  "_location": "/strapi-plugin-revisions",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "strapi-plugin-revisions@^1.0.0-alpha.1",
+    "name": "strapi-plugin-revisions",
+    "escapedName": "strapi-plugin-revisions",
+    "rawSpec": "^1.0.0-alpha.1",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.0-alpha.1"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/strapi-plugin-revisions/-/strapi-plugin-revisions-1.0.0-alpha.1.tgz",
+  "_shasum": "952a836a0d5c3a358b95f6692114e94347422e46",
+  "_spec": "strapi-plugin-revisions@^1.0.0-alpha.1",
+  "_where": "D:\\git\\strapi-fork\\strapi\\examples\\getstarted",
+  "author": {
+    "name": "Joeri Damme",
+    "email": "joerid@gmail.com"
+  },
+  "bundleDependencies": false,
+  "dependencies": {},
+  "deprecated": false,
+  "description": "Add revision history of collection types to Strapi.",
+  "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
+  "license": "GNU General Public License v3.0",
+  "maintainers": [
+    {
+      "name": "Joeri Damme",
+      "email": "joerid@gmail.com"
+    }
+  ],
+  "name": "strapi-plugin-revisions",
+  "publishConfig": {
+    "access": "public"
+  },
+  "strapi": {
+    "name": "Revisions",
+    "icon": "plug",
+    "description": "Add revision history of collection types to Strapi."
+  },
+  "version": "1.0.0-alpha.1"
+}

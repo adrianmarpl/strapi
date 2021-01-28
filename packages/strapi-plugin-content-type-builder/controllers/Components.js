@@ -88,6 +88,8 @@ module.exports = {
    * @param {Object} ctx - koa context - enhanced koa context
    */
   async updateComponent(ctx) {
+    console.log('TypeBuilder - updateComponent: ', ctx);
+    
     const { uid } = ctx.params;
     const { body } = ctx.request;
 
